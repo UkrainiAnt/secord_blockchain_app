@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .page_wrapper {
+    @apply h-screen max-h-screen min-h-screen w-screen bg-dark text-white select-none flex  flex-col;
+  }
+}

@@ -1,8 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/index.css";
+import type { AppProps } from "next/app";
+
+import { TransactionProvider } from "context";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <TransactionProvider>
+      <Component {...pageProps} />
+    </TransactionProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
